@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-07-05T13:21:24.018452",
+  "estimate": {
+    "exp1_h": 1.388,
+    "exp2_h": 4.188,
+    "exp3_h": 1.172,
+    "total_h": 6.748
+  },
+  "gate_max_abs_diff": 4.1427652908154755e-07,
+  "phase": "setup",
+  "run_config": {
+    "dB64_eval_seeds": 20,
+    "exp1_trials": 32,
+    "exp3_readouts": [
+      "A_only",
+      "B_only",
+      "C_only",
+      "full"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "d_B": 64,
+  "memory_range": {
+    "chain_dB16": 21,
+    "chain_dB64": 17,
+    "parallel_dB64": 20
+  },
+  "n_b_qubits": 6,
+  "paired": {
+    "parallel_vs_chain_dB16": {
+      "ci95_hi": 0.2626344017092946,
+      "ci95_lo": -0.14665349514734488,
+      "cohen_dz": 0.13450924328673297,
+      "losses": 9,
+      "mean_a": 15.383808868999793,
+      "mean_b": 15.319335852643848,
+      "mean_diff": 0.06447301635594661,
+      "median_a": 15.355458416422373,
+      "median_b": 15.23711909320129,
+      "n": 19,
+      "p_ttest": 0.5649465836951445,
+      "p_wilcoxon": 0.5677604675292969,
+      "relative_diff": 0.004208603883099508,
+      "se_diff": 0.10996362778294742,
+      "std_diff": 0.4793203409709894,
+      "wins": 10
+    },
+    "parallel_vs_chain_dB64": {
+      "ci95_hi": 1.504712979163478,
+      "ci95_lo": 1.2464456594673663,
+      "cohen_dz": 4.642108880824513,
+      "losses": 0,
+      "mean_a": 15.383808868999793,
+      "mean_b": 14.003887001987817,
+      "mean_diff": 1.3799218670119777,
+      "median_a": 15.355458416422373,
+      "median_b": 13.980491252474033,
+      "n": 19,
+      "p_ttest": 7.875816809968877e-14,
+      "p_wilcoxon": 3.814697265625e-06,
+      "relative_diff": 0.0985384891220561,
+      "se_diff": 0.06819654513324548,
+      "std_diff": 0.2972618485344276,
+      "wins": 19
+    }
+  },
+  "verdict": "topology does NOT rescue memory range: parallel n_B=6 no better than d_B=16"
+}

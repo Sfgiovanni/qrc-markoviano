@@ -1,0 +1,3 @@
+comparison,margin_relative,margin_absolute,ci95_lo,ci95_hi,n,equivalent_within_margin,mean_noaux,mean_embedded
+ABC-noaux-hierarchical vs ABC-embedded-hierarchical,0.05,0.014208238362170814,0.5470162256303003,0.5634491647903903,20,False,0.8392277549633856,0.28416476724341627
+AB-noaux-kraus vs AB-embedded,0.05,0.017674552098240787,0.21151204175603888,0.22801577799072167,20,False,0.5734971925308335,0.35349104196481573

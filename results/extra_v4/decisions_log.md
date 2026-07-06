@@ -1,0 +1,1 @@
+- [2026-07-05 22:17:53] **MG shot-noise scope** — autonomous rollout capped at 150 steps with 10 noise reps (NRMSE_150 + VPT); design choice to bound budget, not a degradation

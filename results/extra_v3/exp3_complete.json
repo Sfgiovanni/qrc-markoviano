@@ -1,0 +1,14 @@
+{
+  "completed_at": "2026-07-05T20:29:26.030064",
+  "models": [
+    "AB-embedded",
+    "ABC-embedded-hierarchical"
+  ],
+  "phase": "exp3",
+  "readouts": [
+    "A_only",
+    "B_only",
+    "C_only",
+    "full"
+  ]
+}

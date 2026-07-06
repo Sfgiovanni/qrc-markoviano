@@ -1,0 +1,108 @@
+{
+  "H1": {
+    "decision": "aceita",
+    "gate": {
+      "n_paired_seeds": 100,
+      "omega_0.5_beats_1.0": true,
+      "omega_mean_mse150": {
+        "0.0": 0.20199102746375633,
+        "0.5": 0.029728253482965337,
+        "1.0": 0.05791619886334946
+      }
+    },
+    "mg": {
+      "ci": [
+        0.0252182276263687,
+        0.0310674722488555
+      ],
+      "cohen_dz": 1.9019774402429344,
+      "mean_diff": 0.0281879453803841,
+      "n": 100,
+      "p_wilcoxon_holm": 6.895762361091148e-15,
+      "significant": true,
+      "wins": 94
+    },
+    "stm": {
+      "ci": [
+        0.0120539662700836,
+        0.0150219158531089
+      ],
+      "cohen_dz": 1.749481248893222,
+      "mean_diff": 0.0134796006921841,
+      "n": 100,
+      "p_wilcoxon_holm": 7.676222894838941e-16,
+      "significant": true,
+      "wins": 100
+    }
+  },
+  "H2": {
+    "decision": "nao aceita de forma robusta / parcial",
+    "positive_vs_AB": 3,
+    "sig_vs_AB": [
+      6,
+      11
+    ],
+    "sig_vs_tied": [
+      6,
+      11
+    ],
+    "two_separated_scales": false
+  },
+  "H3": {
+    "decision": "nao aceita",
+    "divergence_ok": "False",
+    "mse150": {
+      "ci": [
+        -0.834239961182008,
+        -0.0346093709046822
+      ],
+      "cohen_dz": -0.2677707340523461,
+      "mean_diff": -0.3071446133118197,
+      "n": 20,
+      "p_wilcoxon_holm": 0.009735107421875,
+      "significant": true,
+      "wins": 2
+    },
+    "relative_reduction": -6.513180182584717,
+    "vpt_ok": true
+  },
+  "H4": {
+    "decision": "vantagem embedded significativa em parte das tarefas",
+    "positive_tasks": 0,
+    "sig_tasks": 11,
+    "total_tasks": 11
+  },
+  "H5": {
+    "decision": "equivalencia pratica nao demonstrada",
+    "rows": [
+      {
+        "ci95_hi": 0.5634491647903903,
+        "ci95_lo": 0.5470162256303003,
+        "comparison": "ABC-noaux-hierarchical vs ABC-embedded-hierarchical",
+        "equivalent_within_margin": false,
+        "margin_absolute": 0.0142082383621708,
+        "margin_relative": 0.05,
+        "mean_embedded": 0.2841647672434162,
+        "mean_noaux": 0.8392277549633856,
+        "n": 20
+      },
+      {
+        "ci95_hi": 0.2280157779907216,
+        "ci95_lo": 0.2115120417560388,
+        "comparison": "AB-noaux-kraus vs AB-embedded",
+        "equivalent_within_margin": false,
+        "margin_absolute": 0.0176745520982407,
+        "margin_relative": 0.05,
+        "mean_embedded": 0.3534910419648157,
+        "mean_noaux": 0.5734971925308335,
+        "n": 20
+      }
+    ]
+  },
+  "H6": {
+    "best_model": "ABC-noaux-kraus",
+    "best_noaux": "ABC-noaux-kraus",
+    "decision": "vantagem desempenho-custo noaux plausivel",
+    "noaux_capacity_fraction_of_best": 1.0
+  }
+}

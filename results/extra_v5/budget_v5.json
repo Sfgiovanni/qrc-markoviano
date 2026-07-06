@@ -1,0 +1,79 @@
+{
+  "degradations": [],
+  "esp_gamma002": {
+    "conv": 58,
+    "violated": false,
+    "washout": 1000
+  },
+  "estimate": {
+    "total_h": 1.348
+  },
+  "estimate_base": {
+    "total_h": 1.348
+  },
+  "generated_at": "2026-07-06T10:03:36.067202",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "infra_repro_config": {
+    "eta": 1.3387885644633968,
+    "omega": 0.06988003641298665
+  },
+  "infra_repro_tau_mem": 21,
+  "reference_window": [
+    19,
+    23
+  ],
+  "run_config": {
+    "etas": [
+      0.39269908169872414,
+      0.7853981633974483,
+      1.1780972450961724
+    ],
+    "eval_seeds": 20,
+    "gammas": [
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ]
+  },
+  "sanity": {
+    "gamma_0.02": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.0036479090340435505,
+      "passed": true,
+      "trace_error": 0.0
+    },
+    "gamma_0.05": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.0033054088708013296,
+      "passed": true,
+      "trace_error": 0.0
+    },
+    "gamma_0.1": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.0028320627752691507,
+      "passed": true,
+      "trace_error": 0.0
+    },
+    "gamma_0.2": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.0021444186568260193,
+      "passed": true,
+      "trace_error": 0.0
+    }
+  },
+  "seconds_per_step": {
+    "AB-embedded": 0.004076327217949761,
+    "M0-noaux": 0.0009137418535020616
+  },
+  "thresholds": {
+    "abort_h": 16.0,
+    "go_h": 10.0
+  },
+  "washouts": {
+    "0.02": 1000,
+    "0.05": 1000,
+    "0.1": 1000,
+    "0.2": 1000
+  }
+}

@@ -1,0 +1,8 @@
+model,n_a,n_aux,total_qubits,density_matrix_dimension,density_complex_entries,buffer_states,classical_buffer_complex_entries,partial_swaps_per_step,kraus_or_depol_channels_per_step,mean_capacity,seconds_per_step,device
+M0-noaux,4,0,4,16x16,256,1,256,0,0,0.24170558874964979,2.0,cpu
+AB-noaux-kraus,4,0,4,16x16,256,50,12800,0,0,0.5734971925308335,9.0,cpu
+ABC-noaux-kraus,4,0,4,16x16,256,60,15360,0,0,0.8392277549633856,16.0,cpu
+ABC-noaux-hierarchical,4,0,4,16x16,256,60,15360,0,0,0.8392277549633856,16.0,cpu
+AB-embedded,4,4,8,256x256,65536,0,0,4,4,0.35349104196481573,0.0,cuda
+ABC-embedded-hierarchical,4,8,12,4096x4096,16777216,0,0,8,8,0.2841647672434162,0.0,cuda
+ABC-embedded-tied,4,8,12,4096x4096,16777216,0,0,8,8,0.3734583164482739,0.0,cuda

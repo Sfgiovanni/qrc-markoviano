@@ -1,0 +1,47 @@
+{
+  "memory_valid_threshold": 0.1,
+  "per_d_B": {
+    "16": {
+      "memory_range_tau": 21,
+      "n_b_qubits": 4,
+      "n_seeds": 20,
+      "product_s10_s20_mean": 0.44338007278335556,
+      "total_linear_stm": 15.26660045540844
+    },
+    "2": {
+      "memory_range_tau": 18,
+      "n_b_qubits": 1,
+      "n_seeds": 20,
+      "product_s10_s20_mean": 0.27015397528115953,
+      "total_linear_stm": 11.633093314970406
+    },
+    "32": {
+      "memory_range_tau": 16,
+      "n_b_qubits": 5,
+      "n_seeds": 20,
+      "product_s10_s20_mean": 0.3617185738569504,
+      "total_linear_stm": 13.681992347191725
+    },
+    "4": {
+      "memory_range_tau": 19,
+      "n_b_qubits": 2,
+      "n_seeds": 20,
+      "product_s10_s20_mean": 0.347495153063482,
+      "total_linear_stm": 13.196260552971763
+    },
+    "64": {
+      "memory_range_tau": 17,
+      "n_b_qubits": 6,
+      "n_seeds": 20,
+      "product_s10_s20_mean": 0.3448889785939054,
+      "total_linear_stm": 14.012052517457336
+    },
+    "8": {
+      "memory_range_tau": 19,
+      "n_b_qubits": 3,
+      "n_seeds": 20,
+      "product_s10_s20_mean": 0.3788993242320121,
+      "total_linear_stm": 13.772731809614267
+    }
+  }
+}

@@ -1,0 +1,15 @@
+- [2026-07-05 13:21:24] phase=**phase0_gate** 100.0% | elapsed 0.02h | ETA 0.00h | GPU 45/596 MB | budget 6.75h
+- [2026-07-05 13:21:43] phase=**start**   0.0% | elapsed 0.00h | ETA n/a | GPU 0/0 MB
+- [2026-07-05 13:36:45] phase=**exp1**  23.3% | elapsed 0.25h | ETA 0.82h | GPU 223/411 MB | d_B=4 seed=7
+- [2026-07-05 14:00:52] phase=**exp1**  50.8% | elapsed 0.65h | ETA 0.63h | GPU 223/411 MB | d_B=16 seed=0
+- [2026-07-05 14:20:37] phase=**exp1**  67.5% | elapsed 0.98h | ETA 0.47h | GPU 223/411 MB | d_B=32 seed=0
+- [2026-07-05 14:44:24] phase=**exp1**  84.2% | elapsed 1.38h | ETA 0.26h | GPU 223/411 MB | d_B=64 seed=0
+- [2026-07-05 18:17:53] phase=**exp2_tune** 100.0% | elapsed 4.94h | ETA 0.00h | GPU 80/771 MB | tuning done
+- [2026-07-05 18:34:49] phase=**exp2_eval**  30.0% | elapsed 5.22h | ETA 12.18h | GPU 406/944 MB | seed 5
+- [2026-07-05 18:51:44] phase=**exp2_eval**  60.0% | elapsed 5.50h | ETA 3.67h | GPU 460/997 MB | seed 11
+- [2026-07-05 19:08:40] phase=**exp2_eval**  90.0% | elapsed 5.78h | ETA 0.64h | GPU 290/1042 MB | seed 17
+- [2026-07-05 19:23:52] phase=**exp3**  27.5% | elapsed 6.04h | ETA 15.91h | GPU 136/1042 MB | AB-embedded seed10
+- [2026-07-05 19:40:24] phase=**exp3**  57.5% | elapsed 6.31h | ETA 4.66h | GPU 323/1042 MB | ABC-embedded-hierarchical seed2
+- [2026-07-05 19:57:41] phase=**exp3**  72.5% | elapsed 6.60h | ETA 2.50h | GPU 323/1042 MB | ABC-embedded-hierarchical seed8
+- [2026-07-05 20:14:59] phase=**exp3**  87.5% | elapsed 6.89h | ETA 0.98h | GPU 323/1042 MB | ABC-embedded-hierarchical seed14
+- [2026-07-05 20:29:26] phase=**done** 100.0% | elapsed 7.13h | ETA 0.00h | GPU 187/1042 MB

@@ -1,0 +1,92 @@
+{
+  "consistency_v3_v4": {
+    "all_gamma01_points": [
+      21,
+      18,
+      16,
+      19,
+      17,
+      19,
+      21,
+      17,
+      20
+    ],
+    "consistent": true,
+    "reference_tau_mem_gamma01": 16.0,
+    "v3_dimension_memory_range": {
+      "16": 21,
+      "2": 18,
+      "32": 16,
+      "4": 19,
+      "64": 17,
+      "8": 19
+    },
+    "v4_topology_memory_range": {
+      "chain_dB16": 21,
+      "chain_dB64": 17,
+      "parallel_dB64": 20
+    }
+  },
+  "eta_sweep": {
+    "points": [
+      {
+        "eta": 0.39269908169872414,
+        "eta_label": "pi8",
+        "tau_mem": 17.0
+      },
+      {
+        "eta": 0.7853981633974483,
+        "eta_label": "pi4",
+        "tau_mem": 16.0
+      },
+      {
+        "eta": 1.1780972450961724,
+        "eta_label": "3pi8",
+        "tau_mem": 18.0
+      }
+    ],
+    "trend": "non-monotonic / no clear trend"
+  },
+  "fit_a_tau_vs_inv_gamma": {
+    "exp_ci95_hi": 0.08865083637191254,
+    "exp_ci95_lo": 0.025202532434125676,
+    "exponent": 0.08865083637191254,
+    "intercept": 2.6187182521352037,
+    "n": 4,
+    "r2": 0.7726906445948243
+  },
+  "fit_b_excess_vs_inv_gamma": {
+    "exp_ci95_hi": 1.1989778467157917,
+    "exp_ci95_lo": 0.0,
+    "exponent": null,
+    "intercept": null,
+    "n": 1,
+    "r2": null
+  },
+  "gamma_sweep": {
+    "excess": [
+      2.0,
+      0.0,
+      -3.0,
+      -1.0
+    ],
+    "gammas": [
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "tau_FM": [
+      17.0,
+      19.0,
+      19.0,
+      17.0
+    ],
+    "tau_mem": [
+      19.0,
+      19.0,
+      16.0,
+      16.0
+    ]
+  }
+}

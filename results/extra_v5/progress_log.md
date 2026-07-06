@@ -1,0 +1,12 @@
+- [2026-07-06 10:03:36] phase=**phase0_gate** 100.0% | elapsed 0.04h | ETA 0.00h | GPU 98/411 MB | budget 1.35h, ref_tau=21
+- [2026-07-06 10:04:04] phase=**start**   0.0% | elapsed 0.00h | ETA n/a | GPU 0/0 MB
+- [2026-07-06 10:16:46] phase=**eval**  50.0% | elapsed 0.21h | ETA 0.21h | GPU 223/411 MB | g0.02_epi4 omega=0.1 washout=1000
+- [2026-07-06 10:16:46] phase=**sweep**  90.0% | elapsed 0.21h | ETA 0.02h | GPU 223/411 MB | gamma=0.02 done
+- [2026-07-06 10:28:52] phase=**eval**  50.0% | elapsed 0.41h | ETA 0.41h | GPU 223/411 MB | g0.05_epi4 omega=0.1 washout=1000
+- [2026-07-06 10:28:52] phase=**sweep**  90.0% | elapsed 0.41h | ETA 0.05h | GPU 223/411 MB | gamma=0.05 done
+- [2026-07-06 10:39:30] phase=**eval**  50.0% | elapsed 0.59h | ETA 0.59h | GPU 223/411 MB | g0.1_epi8 omega=0.1 washout=1000
+- [2026-07-06 10:49:10] phase=**eval**  50.0% | elapsed 0.75h | ETA 0.75h | GPU 223/411 MB | g0.1_epi4 omega=0.1 washout=1000
+- [2026-07-06 10:59:33] phase=**eval**  50.0% | elapsed 0.92h | ETA 0.92h | GPU 223/411 MB | g0.1_e3pi8 omega=0.1 washout=1000
+- [2026-07-06 10:59:33] phase=**sweep**  90.0% | elapsed 0.92h | ETA 0.10h | GPU 223/411 MB | gamma=0.1 done
+- [2026-07-06 11:02:17] phase=**sweep**  90.0% | elapsed 0.97h | ETA 0.11h | GPU 35/411 MB | gamma=0.2 done
+- [2026-07-06 11:02:24] phase=**done** 100.0% | elapsed 0.97h | ETA 0.00h | GPU 35/411 MB

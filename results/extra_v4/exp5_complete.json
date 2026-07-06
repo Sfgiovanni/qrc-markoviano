@@ -1,0 +1,12 @@
+{
+  "completed_at": "2026-07-06T02:09:25.995741",
+  "models": [
+    "ABC-noaux-kraus",
+    "ABC-noaux-tied",
+    "AB-embedded",
+    "ABC-embedded-hierarchical",
+    "M0-noaux",
+    "AB-Markov"
+  ],
+  "phase": "exp5"
+}

@@ -1,0 +1,17 @@
+- [2026-07-05 22:17:29] phase=**phase0_gate** 100.0% | elapsed 0.01h | ETA 0.00h | GPU 26/566 MB | budget 4.07h
+- [2026-07-05 22:17:53] phase=**start**   0.0% | elapsed 0.00h | ETA n/a | GPU 0/0 MB
+- [2026-07-05 22:33:08] phase=**exp4**  57.5% | elapsed 0.25h | ETA 0.19h | GPU 62/411 MB | AB-embedded seed5
+- [2026-07-05 22:51:30] phase=**exp4**  77.5% | elapsed 0.56h | ETA 0.16h | GPU 187/861 MB | ABC-embedded-hierarchical seed1
+- [2026-07-05 23:09:42] phase=**exp4**  82.5% | elapsed 0.86h | ETA 0.18h | GPU 187/861 MB | ABC-embedded-hierarchical seed5
+- [2026-07-05 23:27:52] phase=**exp4**  87.5% | elapsed 1.17h | ETA 0.17h | GPU 187/861 MB | ABC-embedded-hierarchical seed9
+- [2026-07-05 23:46:03] phase=**exp4**  92.5% | elapsed 1.47h | ETA 0.12h | GPU 187/861 MB | ABC-embedded-hierarchical seed13
+- [2026-07-06 00:04:15] phase=**exp4**  97.5% | elapsed 1.77h | ETA 0.05h | GPU 187/861 MB | ABC-embedded-hierarchical seed17
+- [2026-07-06 00:19:15] phase=**exp5_narma**  49.2% | elapsed 2.02h | ETA 2.09h | GPU 190/861 MB | AB-embedded seed18
+- [2026-07-06 00:35:11] phase=**exp5_narma**  60.8% | elapsed 2.29h | ETA 1.47h | GPU 323/861 MB | ABC-embedded-hierarchical seed12
+- [2026-07-06 00:50:17] phase=**exp5_santafe**  12.5% | elapsed 2.54h | ETA 17.78h | GPU 187/861 MB | ABC-noaux-kraus seed14
+- [2026-07-06 01:08:00] phase=**exp5_santafe**  51.7% | elapsed 2.84h | ETA 2.65h | GPU 457/861 MB | ABC-embedded-hierarchical seed1
+- [2026-07-06 01:25:15] phase=**exp5_santafe**  56.7% | elapsed 3.12h | ETA 2.39h | GPU 457/861 MB | ABC-embedded-hierarchical seed7
+- [2026-07-06 01:42:31] phase=**exp5_santafe**  61.7% | elapsed 3.41h | ETA 2.12h | GPU 457/861 MB | ABC-embedded-hierarchical seed13
+- [2026-07-06 01:59:46] phase=**exp5_santafe**  66.7% | elapsed 3.70h | ETA 1.85h | GPU 457/861 MB | ABC-embedded-hierarchical seed19
+- [2026-07-06 02:23:37] phase=**exp6_tune** 100.0% | elapsed 4.10h | ETA 0.00h | GPU 223/861 MB | tuning done
+- [2026-07-06 02:30:00] phase=**done** 100.0% | elapsed 4.20h | ETA 0.00h | GPU 223/861 MB

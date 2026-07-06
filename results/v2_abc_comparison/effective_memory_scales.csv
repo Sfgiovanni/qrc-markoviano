@@ -1,0 +1,22 @@
+model,layer,scale_rank,tau_peak,capacity_peak,evidence
+AB-Markov,A_readout,1,30,0.0010591683458051585,STM peak over 20 eval seeds
+AB-embedded,A_readout,1,0,0.9983647917264864,STM peak over 20 eval seeds
+AB-noaux-kraus,A_readout,1,10,0.996399446504171,STM peak over 20 eval seeds
+ABC-Markov,A_readout,1,30,0.0010590406569139267,STM peak over 20 eval seeds
+ABC-embedded-C-off,A_readout,1,40,0.001178506765248013,STM peak over 20 eval seeds
+ABC-embedded-hierarchical,A_readout,1,0,0.9987204200201607,STM peak over 20 eval seeds
+ABC-embedded-parallel,A_readout,1,0,0.9989956854785028,STM peak over 20 eval seeds
+ABC-embedded-tied,A_readout,1,40,0.001561977998905244,STM peak over 20 eval seeds
+ABC-noaux-B-only,A_readout,1,40,0.1774801444248671,STM peak over 20 eval seeds
+ABC-noaux-C-only,A_readout,1,40,0.00451383721166336,STM peak over 20 eval seeds
+ABC-noaux-hierarchical,A_readout,1,10,0.9965603864231423,STM peak over 20 eval seeds
+ABC-noaux-kraus,A_readout,1,10,0.9965603864231423,STM peak over 20 eval seeds
+ABC-noaux-shuffled-history,A_readout,1,30,0.005345746147393995,STM peak over 20 eval seeds
+ABC-noaux-tied,A_readout,1,0,0.9974312497347885,STM peak over 20 eval seeds
+M0-noaux,A_readout,1,0,0.9072611433355009,STM peak over 20 eval seeds
+ABC-embedded-hierarchical,A_diag_N4,1,2,-0.12984575703013684,"N=4 embedded layer autocorrelation, seed 0"
+ABC-embedded-hierarchical,B_diag_N4,1,2,-0.13433392399169575,"N=4 embedded layer autocorrelation, seed 0"
+ABC-embedded-hierarchical,C_diag_N4,1,2,0.27992368002957607,"N=4 embedded layer autocorrelation, seed 0"
+ABC-embedded-hierarchical,A_diag_N4,1,1,0.23506237569285218,"N=4 embedded layer autocorrelation, seed 1"
+ABC-embedded-hierarchical,B_diag_N4,1,1,0.25188532882389214,"N=4 embedded layer autocorrelation, seed 1"
+ABC-embedded-hierarchical,C_diag_N4,1,2,0.30534845628113483,"N=4 embedded layer autocorrelation, seed 1"

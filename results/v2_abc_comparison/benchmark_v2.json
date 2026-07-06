@@ -1,0 +1,8 @@
+{
+  "cpu_seconds_per_step_noaux": 0.002437787055969238,
+  "device": "NVIDIA GeForce RTX 3080 Ti",
+  "gpu_mem_mb_AB-embedded": 411.2,
+  "gpu_mem_mb_ABC-embedded-hierarchical": 559.7,
+  "gpu_seconds_per_step_AB-embedded": 0.003461289405822754,
+  "gpu_seconds_per_step_ABC-embedded-hierarchical": 0.019850499629974365
+}

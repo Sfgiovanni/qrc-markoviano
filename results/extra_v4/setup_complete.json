@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-07-05T22:17:29.871663",
+  "estimate": {
+    "exp4_h": 1.838,
+    "exp5_h": 1.89,
+    "exp6_h": 0.34,
+    "total_h": 4.068
+  },
+  "phase": "setup",
+  "run_config": {
+    "exp4_n_shots": [
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      null
+    ],
+    "exp6_eval_seeds": 20,
+    "santafe_rollout": true
+  }
+}

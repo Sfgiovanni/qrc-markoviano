@@ -1,0 +1,3 @@
+timestamp,context,reason,detail
+2026-07-06T10:16:05.512695,g0.02_epi4/AB-embedded/seed15,watchdog_step_timeout,step 0.149s exceeded 10x benchmark 0.004s
+2026-07-06T11:02:17.718540,gamma_0.2,gamma_processing_exception,WatchdogError('step 0.150s exceeded 10x benchmark 0.004s')

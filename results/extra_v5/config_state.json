@@ -1,0 +1,51 @@
+{
+  "g0.02_epi4": {
+    "esp_conv": 58,
+    "omega_opt": 0.1,
+    "washout": 1000
+  },
+  "g0.05_epi4": {
+    "esp_conv": 53,
+    "omega_opt": 0.1,
+    "washout": 1000
+  },
+  "g0.1_e3pi8": {
+    "esp_conv": 50,
+    "omega_opt": 0.1,
+    "washout": 1000
+  },
+  "g0.1_epi4": {
+    "esp_conv": 49,
+    "omega_opt": 0.1,
+    "washout": 1000
+  },
+  "g0.1_epi8": {
+    "esp_conv": 80,
+    "omega_opt": 0.1,
+    "washout": 1000
+  },
+  "g0.2_epi4": {
+    "esp_conv": 44,
+    "washout": 1000
+  },
+  "gamma_0.02": {
+    "esp_conv": 58,
+    "tau_fm": 17,
+    "washout": 1000
+  },
+  "gamma_0.05": {
+    "esp_conv": 53,
+    "tau_fm": 19,
+    "washout": 1000
+  },
+  "gamma_0.1": {
+    "esp_conv": 49,
+    "tau_fm": 19,
+    "washout": 1000
+  },
+  "gamma_0.2": {
+    "esp_conv": 44,
+    "tau_fm": 17,
+    "washout": 1000
+  }
+}

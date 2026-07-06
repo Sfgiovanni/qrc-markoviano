@@ -1,0 +1,17 @@
+{
+  "completed_at": "2026-07-06T00:13:20.386069",
+  "models": [
+    "ABC-noaux-kraus",
+    "ABC-noaux-tied",
+    "AB-embedded",
+    "ABC-embedded-hierarchical"
+  ],
+  "n_shots": [
+    "1e2",
+    "1e3",
+    "1e4",
+    "1e5",
+    "inf"
+  ],
+  "phase": "exp4"
+}

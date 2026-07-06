@@ -1,0 +1,57 @@
+{
+  "degradations": [],
+  "estimate": {
+    "exp4_h": 1.838,
+    "exp5_h": 1.89,
+    "exp6_h": 0.34,
+    "total_h": 4.068
+  },
+  "estimate_base": {
+    "exp4_h": 1.838,
+    "exp5_h": 1.89,
+    "exp6_h": 0.34,
+    "total_h": 4.068
+  },
+  "exp4_datapath_check": {
+    "max_clean_vs_v2": 3.946660561693349e-07,
+    "max_inf_vs_clean": 0.0,
+    "passed": true,
+    "tol": 1e-06
+  },
+  "exp5_narma_check": {
+    "m0_nmse": 0.608861947223334,
+    "passed": true
+  },
+  "generated_at": "2026-07-05T22:17:29.871098",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "run_config": {
+    "exp4_n_shots": [
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      null
+    ],
+    "exp6_eval_seeds": 20,
+    "santafe_rollout": true
+  },
+  "sanity_parallel": {
+    "hermiticity_error": 0.0,
+    "min_eig": 0.0006242877570912242,
+    "passed": true,
+    "trace_error": 5.960464477539063e-08
+  },
+  "seconds_per_step": {
+    "AB-Markov": 0.0033046669430202907,
+    "AB-embedded": 0.003386333253648546,
+    "ABC-embedded-hierarchical": 0.023494227727254232,
+    "ABC-noaux-kraus": 0.0014009263780381945,
+    "ABC-noaux-tied": 0.0013849258422851563,
+    "M0-noaux": 0.0007195472717285156,
+    "parallel_dB64": 0.006508737140231662
+  },
+  "thresholds": {
+    "abort_h": 20.0,
+    "go_h": 12.0
+  }
+}

@@ -1,0 +1,28 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ---- Large / regenerable run artifacts ----
+# The pipeline scripts recreate these directories at the repo root on each run.
+# Only the slim, curated outputs under results/ are version-controlled.
+results_abc_comparison_v2/
+results_extra_v3/
+results_extra_v4/
+results_extra_v5/
+results_corrections_v6/
+figures_abc_comparison_v2/
+
+# Heavy binaries and caches (never committed)
+*.zip
+*.npz
+*.sqlite3
+**/channel_cache/
+*.log
+
+# ---- OS ----
+.DS_Store

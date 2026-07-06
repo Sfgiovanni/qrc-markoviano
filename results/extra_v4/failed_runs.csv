@@ -1,0 +1,4 @@
+timestamp,context,reason,detail
+2026-07-05T22:29:48.423140,exp4/AB-embedded/seed0,watchdog_step_timeout,step 0.101s exceeded 10x benchmark 0.003s
+2026-07-06T00:17:35.959662,narma/AB-embedded/seed8,watchdog_step_timeout,step 0.148s exceeded 10x benchmark 0.003s
+2026-07-06T02:27:44.738990,exp6/seed12,watchdog_step_timeout,step 0.187s exceeded 10x benchmark 0.007s

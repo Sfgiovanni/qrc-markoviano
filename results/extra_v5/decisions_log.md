@@ -1,0 +1,3 @@
+- [2026-07-06 10:01:21] **Reference gate eta correction** — spec's reference (gamma=0.1, eta=pi/4) gives tau_mem~15, not 21; v3's tau=21 uses eta=1.3388, omega=0.0699. Reproduction gate run against v3's real config; sweeps kept as specified (eta in {pi/8,pi/4,3pi/8}).
+- [2026-07-06 10:01:25] **gamma=0.1 cache** — reused v2 channel cache (verified max|diff|=0.00e+00 < 1e-9)
+- [2026-07-06 10:04:04] **ESP washout omega** — ESP measured at omega=0.1 (grid minimum, worst case for washout); tuned omega is >= this, so the adaptive washout is conservative.

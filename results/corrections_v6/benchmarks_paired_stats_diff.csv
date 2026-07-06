@@ -1,0 +1,17 @@
+task,metric,noaux,embedded,n_orig,n_corr,n_changed,mean_diff,mean_diff_unchanged,ci_orig,ci_corr,ci_sign_flipped,orig_ci_consistent_with_effect,corr_ci_consistent_with_effect,p_holm,sig_p_holm_lt_0.05
+NARMA10,nmse,ABC-noaux-kraus,AB-embedded,18,18,False,0.1354028021332781,True,"[-0.151,-0.121]","[0.121,0.151]",True,False,True,8.392333984375e-05,True
+NARMA10,nmse,ABC-noaux-kraus,ABC-embedded-hierarchical,19,19,False,0.0927393289546997,True,"[-0.112,-0.0755]","[0.0755,0.112]",True,False,True,5.340576171875e-05,True
+NARMA10,nmse,ABC-noaux-tied,AB-embedded,18,18,False,0.0023605197492205,True,"[-0.026,0.0215]","[-0.0215,0.026]",False,False,False,1.0,False
+NARMA10,nmse,ABC-noaux-tied,ABC-embedded-hierarchical,19,19,False,-0.0413210068246208,True,"[0.0209,0.0613]","[-0.0613,-0.0209]",True,False,True,0.0084686279296875,True
+NARMA10,nrmse,ABC-noaux-kraus,AB-embedded,18,18,False,0.1309698989595033,True,"[-0.147,-0.116]","[0.116,0.147]",True,False,True,8.392333984375e-05,True
+NARMA10,nrmse,ABC-noaux-kraus,ABC-embedded-hierarchical,19,19,False,0.0861017513428429,True,"[-0.105,-0.0695]","[0.0695,0.105]",True,False,True,5.340576171875e-05,True
+NARMA10,nrmse,ABC-noaux-tied,AB-embedded,18,18,False,0.0030222919676714,True,"[-0.0289,0.0227]","[-0.0227,0.0289]",False,False,False,1.0,False
+NARMA10,nrmse,ABC-noaux-tied,ABC-embedded-hierarchical,19,19,False,-0.0425898058412305,True,"[0.0218,0.0626]","[-0.0626,-0.0218]",True,False,True,0.0081977844238281,True
+SantaFe_teacher_forced,nrmse_tf,ABC-noaux-kraus,AB-embedded,20,20,False,0.1430550516831678,True,"[-0.149,-0.137]","[0.137,0.149]",True,False,True,3.0517578125e-05,True
+SantaFe_teacher_forced,nrmse_tf,ABC-noaux-kraus,ABC-embedded-hierarchical,20,20,False,0.1501573717867372,True,"[-0.156,-0.145]","[0.145,0.156]",True,False,True,3.0517578125e-05,True
+SantaFe_teacher_forced,nrmse_tf,ABC-noaux-tied,AB-embedded,20,20,False,-0.0108761264569796,True,"[0.00748,0.0148]","[-0.0148,-0.00748]",True,False,True,6.866455078125e-05,True
+SantaFe_teacher_forced,nrmse_tf,ABC-noaux-tied,ABC-embedded-hierarchical,20,20,False,-0.0037738063534101,True,"[0.000163,0.00754]","[-0.00754,-0.000163]",True,False,True,0.4215927124023437,False
+SantaFe_rollout,nrmse_rollout,ABC-noaux-kraus,AB-embedded,20,20,False,6.967195318467549,True,"[-9.12,-4.89]","[4.89,9.12]",True,False,True,8.58306884765625e-05,True
+SantaFe_rollout,nrmse_rollout,ABC-noaux-kraus,ABC-embedded-hierarchical,20,20,False,7.050425985789877,True,"[-8.86,-5.16]","[5.16,8.86]",True,False,True,8.58306884765625e-05,True
+SantaFe_rollout,nrmse_rollout,ABC-noaux-tied,AB-embedded,20,20,False,1.981219230615268,True,"[-4.09,-0.0454]","[0.0454,4.09]",True,False,True,0.6073493957519531,False
+SantaFe_rollout,nrmse_rollout,ABC-noaux-tied,ABC-embedded-hierarchical,20,20,False,2.064449897937597,True,"[-3.7,-0.461]","[0.461,3.7]",True,False,True,0.1638412475585937,False

@@ -1,0 +1,111 @@
+{
+  "consistency_gate": {
+    "max_abs_diff": 4.1427652908154755e-07,
+    "passed": true,
+    "per_tau": {
+      "0": {
+        "abs_diff": 1.7141108532570115e-09,
+        "my_mean": 0.998499045976526,
+        "v2_mean": 0.9984990442624151
+      },
+      "10": {
+        "abs_diff": 4.1427652908154755e-07,
+        "my_mean": 0.718739095562753,
+        "v2_mean": 0.718739509839282
+      },
+      "20": {
+        "abs_diff": 1.1088190894105454e-07,
+        "my_mean": 0.009535832329792866,
+        "v2_mean": 0.009535721447883925
+      },
+      "30": {
+        "abs_diff": 1.0221883923501596e-08,
+        "my_mean": 0.0003730329141496267,
+        "v2_mean": 0.0003730431360335502
+      },
+      "40": {
+        "abs_diff": 3.5924348691564884e-08,
+        "my_mean": 0.0008471457836570669,
+        "v2_mean": 0.0008471098593083753
+      },
+      "5": {
+        "abs_diff": 9.935352862644464e-08,
+        "my_mean": 0.9615647214157718,
+        "v2_mean": 0.9615648207693004
+      },
+      "50": {
+        "abs_diff": 2.1040979718701513e-08,
+        "my_mean": 0.0004304149668910594,
+        "v2_mean": 0.0004303939259113407
+      }
+    },
+    "tol": 0.001,
+    "v2_params": {
+      "eta": 0.5667489559772895,
+      "omega": 0.141584241652351
+    }
+  },
+  "degradations": [],
+  "estimate": {
+    "exp1_h": 1.388,
+    "exp2_h": 4.188,
+    "exp3_h": 1.172,
+    "total_h": 6.748
+  },
+  "estimate_base": {
+    "exp1_h": 1.388,
+    "exp2_h": 4.188,
+    "exp3_h": 1.172,
+    "total_h": 6.748
+  },
+  "generated_at": "2026-07-05T13:21:24.017667",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "note_exp1_trials_raised": "Exp1 tuning uses 32 trials per d_B (raised from 16) as requested; recorded here, not in failed_runs.",
+  "run_config": {
+    "dB64_eval_seeds": 20,
+    "exp1_trials": 32,
+    "exp3_readouts": [
+      "A_only",
+      "B_only",
+      "C_only",
+      "full"
+    ]
+  },
+  "sanity": {
+    "n_b=2": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.00500389002263546,
+      "passed": true,
+      "trace_error": 0.0
+    },
+    "n_b=4": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.0022285915911197662,
+      "passed": true,
+      "trace_error": 0.0
+    },
+    "n_b=6": {
+      "hermiticity_error": 0.0,
+      "min_eig": 0.0005909277824684978,
+      "passed": true,
+      "trace_error": 0.0
+    },
+    "passed": true
+  },
+  "seconds_per_step": {
+    "ab_A": 0.003145869572957357,
+    "ab_full": 0.01621104876200358,
+    "abc_A": 0.023122872246636283,
+    "abc_full": 0.054133134418063694,
+    "aux_dB16": 0.00441229608323839,
+    "aux_dB2": 0.0018158382839626736,
+    "aux_dB32": 0.006631443235609266,
+    "aux_dB4": 0.0026901986863878038,
+    "aux_dB64": 0.007469987869262696,
+    "aux_dB8": 0.003554111056857639
+  },
+  "thresholds": {
+    "abort_h": 20.0,
+    "go_h": 12.0
+  }
+}
