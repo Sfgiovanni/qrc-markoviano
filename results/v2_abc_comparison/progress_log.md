@@ -28,7 +28,7 @@ Um run v2 em GPU foi lançado em 2026-07-03 16:10 e rodou ~22.6 h. **Parou limpo
 
 ## Decisão
 
-Retomar o run checkpointed in-place (aproveita ~22.6 h já computadas) em vez de recomeçar (~25 h redundantes). Comando: `~/venvs/qrc_v2/bin/python -u embedded_effective_qrc_pipeline_v2.py` (resume automático). Nenhuma redução adicional de protocolo introduzida na retomada.
+Retomar o run checkpointed in-place (aproveita ~22.6 h já computadas) em vez de recomeçar (~25 h redundantes). Comando: `~/venvs/qrc_v2/bin/python -u qrc_pipeline.py` (resume automático). Nenhuma redução adicional de protocolo introduzida na retomada.
 
 ---
 

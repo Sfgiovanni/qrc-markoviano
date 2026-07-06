@@ -43,7 +43,7 @@ import pandas as pd
 import scipy.linalg
 import torch
 
-import embedded_effective_qrc_pipeline_v2 as v2
+import qrc_pipeline as v2
 
 # ---------------------------------------------------------------------------
 # Isolation
@@ -940,7 +940,7 @@ def main() -> None:
         log(f"ABORTED.md present; refusing to run. Delete it to retry.")
         print(ABORTED_PATH.read_text())
         return
-    log("========== extra_experiments_v5 start ==========")
+    log("========== qrc_experiments_scaling start ==========")
     decision("ESP washout omega", f"ESP measured at omega={ESP_OMEGA} (grid minimum, worst case for "
              "washout); tuned omega is >= this, so the adaptive washout is conservative.")
     heartbeat("start", 0.0, force=True)
@@ -973,7 +973,7 @@ def main() -> None:
         log(f"RUN PARTIAL: {report['n_missing']} missing / {report['n_nonfinite']} non-finite cells; "
             f"wrote summary_partial.json (see completeness_matrix.csv)")
     heartbeat("done", 1.0, force=True)
-    log(f"========== extra_experiments_v5 {report['status']} ==========")
+    log(f"========== qrc_experiments_scaling {report['status']} ==========")
 
 
 if __name__ == "__main__":

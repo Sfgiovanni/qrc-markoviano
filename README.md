@@ -16,28 +16,44 @@ diagnostics, and a scaling-law analysis of memory horizon vs. dynamical scales.
 
 ```
 .
-├── embedded_effective_qrc_pipeline.py      # v1 — scientific specification (CPU reference)
-├── embedded_effective_qrc_pipeline_v2.py   # v2 — main GPU pipeline (ABC comparison)
-├── extra_experiments_v3.py                 # d_B sweep, ABC retuning, readout A/B/C
-├── extra_experiments_v4.py                 # shot noise, NARMA/Santa Fe, topology (parallel vs chain)
-├── extra_experiments_v5.py                 # scaling law: memory horizon vs gamma/eta
-├── corrections/                            # v6 review round: reanalysis / recovery scripts (B1–C2)
-├── tests/                                  # regression tests (NARMA finiteness, paired-sign)
-├── notebooks/                              # paper replication notebooks (v1, v2)
-├── figures/                                # publication figures (PNG + PDF)
-├── results/                                # curated, slim run outputs (see note below)
-│   ├── v2_abc_comparison/                  # summaries, configs, hypothesis decisions, small CSVs
-│   ├── extra_v3/  extra_v4/  extra_v5/     # per-round summaries and verdicts
-│   └── corrections_v6/                     # corrections_summary.md, scaling law, completeness matrices
+├── qrc_pipeline.py                    # main GPU pipeline (embedded vs effective ABC comparison)
+├── qrc_pipeline_reference.py          # CPU reference implementation / scientific specification
+├── qrc_experiments_architecture.py    # d_B sweep, ABC retuning, readout location A/B/C
+├── qrc_experiments_robustness.py      # shot noise, NARMA/Santa Fe benchmarks, topology (parallel vs chain)
+├── qrc_experiments_scaling.py         # scaling law: memory horizon vs gamma/eta
+├── corrections/                       # post-review reanalysis / recovery scripts (see below)
+├── tests/                             # regression tests (NARMA finiteness, paired-sign)
+├── notebooks/
+│   ├── qrc_paper.ipynb                # paper replication notebook (main)
+│   └── qrc_paper_reference.ipynb      # paper replication notebook (CPU reference)
+├── figures/                           # publication figures (PNG + PDF)
+├── results/                           # curated, slim run outputs (see "Results" below)
+│   ├── v2_abc_comparison/             # summaries, configs, hypothesis decisions, small CSVs
+│   ├── extra_v3/  extra_v4/  extra_v5/  # per-round summaries and verdicts
+│   └── corrections_v6/                # corrections_summary.md, scaling law, completeness matrices
 ├── docs/
-│   └── code_review_v2_v5.md                # code review report (v2–v5)
+│   └── code_review_v2_v5.md           # internal code review report
 ├── requirements.txt
-└── LICENSE                                 # MIT
+└── LICENSE                            # MIT
 ```
 
-The five top-level `*.py` modules must live in the same directory: the extra
-experiments and the correction/test scripts `import
-embedded_effective_qrc_pipeline_v2` as a top-level module.
+The five top-level `qrc_*.py` modules must stay in the same directory: the
+experiment, correction and test scripts all `import qrc_pipeline` (and, where
+relevant, the experiment modules) as top-level modules.
+
+### `corrections/`
+
+Scripts from the post-review round that reprocess results and recover lost runs.
+They correspond to the workstreams tracked in `docs/code_review_v2_v5.md`:
+
+| Script                          | Purpose                                                        |
+|---------------------------------|----------------------------------------------------------------|
+| `mg_robustness.py`              | Mackey–Glass H1 robustness across three seed sets              |
+| `clamp_stratified.py`           | Clamp / out-of-range stratification of Mackey–Glass rollouts   |
+| `robustness_paired_stats.py`    | Recompute robustness-experiment paired statistics              |
+| `completeness_matrices.py`      | Per-round run-completeness matrices                            |
+| `scaling_run.py` / `scaling_fits.py` / `scaling_gate.py` | Four-point scaling-law refit and its acceptance gate |
+| `recovery.py` / `recovery_finish.py` | Recover watchdog/NaN-lost seed units                      |
 
 ## Installation
 
@@ -46,7 +62,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-A CUDA-capable GPU is used by the v2 embedded evolution when available; the code
+A CUDA-capable GPU is used by the embedded evolution when available; the code
 falls back to CPU otherwise. Developed and run with Python 3.8+.
 
 ## Running
@@ -55,11 +71,11 @@ Run every script **from the repository root** (output paths are relative to the
 working directory):
 
 ```bash
-python embedded_effective_qrc_pipeline_v2.py   # main ABC comparison
-python extra_experiments_v3.py                 # supplementary sweeps (d_B, retuning, readout)
-python extra_experiments_v4.py                 # shot noise, NARMA/Santa Fe, topology
-python extra_experiments_v5.py                 # scaling-law experiment
-pytest tests/                                  # regression tests
+python qrc_pipeline.py                   # main ABC comparison
+python qrc_experiments_architecture.py   # supplementary sweeps (d_B, retuning, readout)
+python qrc_experiments_robustness.py     # shot noise, NARMA/Santa Fe, topology
+python qrc_experiments_scaling.py        # scaling-law experiment
+pytest tests/                            # regression tests
 ```
 
 Each run (re)creates its own working directory at the repo root
@@ -77,10 +93,10 @@ repository small (~3 MB) while preserving every headline result and its
 provenance.
 
 Start here:
-- `results/corrections_v6/corrections_summary.md` — executive scientific verdict (v6 round)
+- `results/corrections_v6/corrections_summary.md` — executive scientific verdict (post-review round)
 - `results/v2_abc_comparison/final_summary.md` — main ABC comparison results
 - `results/extra_v{3,4,5}/*summary*.md` — supplementary experiment summaries
-- `docs/code_review_v2_v5.md` — code review across v2–v5
+- `docs/code_review_v2_v5.md` — internal code review
 
 ## License
 

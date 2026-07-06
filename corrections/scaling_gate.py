@@ -11,8 +11,8 @@ from pathlib import Path
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-import embedded_effective_qrc_pipeline_v2 as v2  # noqa: E402
-import extra_experiments_v5 as v5  # noqa: E402
+import qrc_pipeline as v2  # noqa: E402
+import qrc_experiments_scaling as v5  # noqa: E402
 
 C1_DIR = Path(ROOT) / "results_corrections_v6" / "c1_gamma02"
 v2.RESULTS_DIR = C1_DIR

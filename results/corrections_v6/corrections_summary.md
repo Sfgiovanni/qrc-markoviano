@@ -42,7 +42,7 @@ não-finitos), v5 parcial (21 missing). Detalhe em `b4_completeness_listing.md`.
 ## Parte A — Correções de código (commits por ID)
 
 ### G1 — v2 aceitava MG sem teacher-forced válido  → **A1**
-`embedded_effective_qrc_pipeline_v2.py`: `run_paper_replication`/`paper_mg_for_seed`.
+`qrc_pipeline.py`: `run_paper_replication`/`paper_mg_for_seed`.
 Todas as linhas continuam salvas; adicionada coluna `included_in_primary =
 teacher_forced_ok`. O gate agora: reporta `n_passed_teacher_forced` por ω; a
 comparação primária ω=0.5 vs 1.0 usa só seeds tf-ok em **ambos** os braços; se
@@ -50,7 +50,7 @@ n_pareado < `min_decision_seeds`(20) → `primary_verdict = inconclusive`. A sta
 legada com todas as seeds fica separada e rotulada.
 
 ### G3 — NARMA-10 com NaN/overflow entrando no resumo → **A2**
-`extra_experiments_v4.py`: `narma10_target` agora propaga overflow como inf e
+`qrc_experiments_robustness.py`: `narma10_target` agora propaga overflow como inf e
 **assere finitude**; `narma10_target_for_seed` refaz com seed+10000 (≤3×,
 registra o remapeamento) ou levanta erro. `v2.all_finite()` é o **validador
 único** usado antes de gravar qualquer linha; `run_narma`/`run_santafe` pulam +

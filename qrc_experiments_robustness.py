@@ -48,7 +48,7 @@ import optuna
 import pandas as pd
 import torch
 
-import embedded_effective_qrc_pipeline_v2 as v2
+import qrc_pipeline as v2
 
 # ---------------------------------------------------------------------------
 # Isolation: redirect every v2 I/O global into results_extra_v4/.
@@ -1244,7 +1244,7 @@ def main() -> None:
         return
     decision("MG shot-noise scope", f"autonomous rollout capped at {MG_ROLLOUT_LEN} steps with "
              f"{MG_NOISE_REPS} noise reps (NRMSE_150 + VPT); design choice to bound budget, not a degradation")
-    log("========== extra_experiments_v4 start ==========")
+    log("========== qrc_experiments_robustness start ==========")
     heartbeat("start", 0.0, force=True)
 
     record = phase0_gate()  # raises AbortRun on gate failure
@@ -1262,7 +1262,7 @@ def main() -> None:
         log(f"RUN PARTIAL: {report['n_missing']} missing / {report['n_nonfinite']} non-finite cells; "
             f"wrote summary_partial.json (see completeness_matrix.csv)")
     heartbeat("done", 1.0, force=True)
-    log(f"========== extra_experiments_v4 {report['status']} ==========")
+    log(f"========== qrc_experiments_robustness {report['status']} ==========")
 
 
 if __name__ == "__main__":

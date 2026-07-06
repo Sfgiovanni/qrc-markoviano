@@ -42,7 +42,7 @@ import optuna
 import pandas as pd
 import torch
 
-import embedded_effective_qrc_pipeline_v2 as v2
+import qrc_pipeline as v2
 
 # ---------------------------------------------------------------------------
 # Isolation: redirect every v2 I/O global into results_extra_v3/. v2's functions
@@ -1014,7 +1014,7 @@ def main() -> None:
         log(f"ABORTED.md present ({ABORTED_PATH}); refusing to run. Delete it to retry.")
         print(ABORTED_PATH.read_text())
         return
-    log("========== extra_experiments_v3 start ==========")
+    log("========== qrc_experiments_architecture start ==========")
     heartbeat("start", 0.0, force=True)
 
     record = phase0_gate()  # raises AbortRun on gate failure
@@ -1027,7 +1027,7 @@ def main() -> None:
     write_summary()
     write_marker("summary")
     heartbeat("done", 1.0, force=True)
-    log("========== extra_experiments_v3 complete ==========")
+    log("========== qrc_experiments_architecture complete ==========")
 
 
 if __name__ == "__main__":

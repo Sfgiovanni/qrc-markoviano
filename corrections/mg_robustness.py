@@ -13,7 +13,7 @@ import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-import embedded_effective_qrc_pipeline_v2 as v2  # noqa: E402
+import qrc_pipeline as v2  # noqa: E402
 
 V6 = os.path.join(ROOT, "results_corrections_v6")
 MG = os.path.join(ROOT, "results_abc_comparison_v2", "paper_replication_mackey_glass.csv")

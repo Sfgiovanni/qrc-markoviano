@@ -10,7 +10,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import embedded_effective_qrc_pipeline_v2 as v2
+import qrc_pipeline as v2
 
 
 def _synthetic():

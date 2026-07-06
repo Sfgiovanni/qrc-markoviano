@@ -4,16 +4,16 @@ Data do review: 2026-07-06
 
 Escopo revisado:
 
-- `embedded_effective_qrc_pipeline_v2.py`
-- `extra_experiments_v3.py`
-- `extra_experiments_v4.py`
-- `extra_experiments_v5.py`
+- `qrc_pipeline.py`
+- `qrc_experiments_architecture.py`
+- `qrc_experiments_robustness.py`
+- `qrc_experiments_scaling.py`
 - logs `v2_*`, `v3_console.log`, `v4_console.log`, `v5_console.log`
 - artefatos principais em `results_abc_comparison_v2/`, `results_extra_v3/`, `results_extra_v4/` e `results_extra_v5/`
 
 Validação executada:
 
-- `python3 -m py_compile embedded_effective_qrc_pipeline_v2.py extra_experiments_v3.py extra_experiments_v4.py extra_experiments_v5.py`
+- `python3 -m py_compile qrc_pipeline.py qrc_experiments_architecture.py qrc_experiments_robustness.py qrc_experiments_scaling.py`
 - Checagem de logs por `Traceback`, `RuntimeWarning`, `NaN`, `inf`, `WatchdogError` e falhas registradas.
 - Checagem dos CSVs finais por contagem de seeds, valores `NaN`/`inf` e combinações ausentes.
 
@@ -30,9 +30,9 @@ Resultado geral:
 
 Arquivo:
 
-- `embedded_effective_qrc_pipeline_v2.py:1156`
-- `embedded_effective_qrc_pipeline_v2.py:1662`
-- `embedded_effective_qrc_pipeline_v2.py:1924`
+- `qrc_pipeline.py:1156`
+- `qrc_pipeline.py:1662`
+- `qrc_pipeline.py:1924`
 
 O problema:
 
@@ -61,9 +61,9 @@ Recomendacao:
 
 Arquivo:
 
-- `extra_experiments_v5.py:939`
-- `extra_experiments_v5.py:944`
-- `extra_experiments_v5.py:945`
+- `qrc_experiments_scaling.py:939`
+- `qrc_experiments_scaling.py:944`
+- `qrc_experiments_scaling.py:945`
 
 O problema:
 
@@ -90,9 +90,9 @@ Recomendacao:
 
 Arquivo:
 
-- `extra_experiments_v4.py:724`
-- `extra_experiments_v4.py:757`
-- `embedded_effective_qrc_pipeline_v2.py:1002`
+- `qrc_experiments_robustness.py:724`
+- `qrc_experiments_robustness.py:757`
+- `qrc_pipeline.py:1002`
 
 O problema:
 
@@ -121,8 +121,8 @@ Recomendacao:
 
 Arquivo:
 
-- `extra_experiments_v4.py:860`
-- `extra_experiments_v4.py:865`
+- `qrc_experiments_robustness.py:860`
+- `qrc_experiments_robustness.py:865`
 
 O problema:
 
@@ -145,11 +145,11 @@ Recomendacao:
 
 Arquivos:
 
-- `extra_experiments_v4.py:621`
-- `extra_experiments_v4.py:884`
-- `extra_experiments_v4.py:1010`
-- `extra_experiments_v5.py:290`
-- `extra_experiments_v5.py:913`
+- `qrc_experiments_robustness.py:621`
+- `qrc_experiments_robustness.py:884`
+- `qrc_experiments_robustness.py:1010`
+- `qrc_experiments_scaling.py:290`
+- `qrc_experiments_scaling.py:913`
 
 O problema:
 
@@ -180,9 +180,9 @@ Recomendacao:
 
 Arquivo:
 
-- `embedded_effective_qrc_pipeline_v2.py:310`
-- `embedded_effective_qrc_pipeline_v2.py:332`
-- `embedded_effective_qrc_pipeline_v2.py:335`
+- `qrc_pipeline.py:310`
+- `qrc_pipeline.py:332`
+- `qrc_pipeline.py:335`
 
 O problema:
 
@@ -200,9 +200,9 @@ Adicionar `CFG.gamma`, `CFG.dt`, `CFG.grid_s_min` e `CFG.grid_s_max` na chave de
 
 Arquivos:
 
-- `embedded_effective_qrc_pipeline_v2.py:1116`
-- `embedded_effective_qrc_pipeline_v2.py:1120`
-- `embedded_effective_qrc_pipeline_v2.py:705`
+- `qrc_pipeline.py:1116`
+- `qrc_pipeline.py:1120`
+- `qrc_pipeline.py:705`
 
 O problema:
 
@@ -230,7 +230,7 @@ Recomendacao:
 
 Arquivo:
 
-- `extra_experiments_v5.py:844`
+- `qrc_experiments_scaling.py:844`
 
 O problema:
 
@@ -248,9 +248,9 @@ Trocar para `b.get("infra_repro_tau_mem")`.
 
 Arquivo:
 
-- `extra_experiments_v4.py:740`
-- `extra_experiments_v4.py:744`
-- `extra_experiments_v4.py:746`
+- `qrc_experiments_robustness.py:740`
+- `qrc_experiments_robustness.py:744`
+- `qrc_experiments_robustness.py:746`
 
 O problema:
 
@@ -268,8 +268,8 @@ Registrar a falha e continuar tentando as demais URLs.
 
 Arquivos:
 
-- `extra_experiments_v4.py:1091`
-- `extra_experiments_v5.py:842`
+- `qrc_experiments_robustness.py:1091`
+- `qrc_experiments_scaling.py:842`
 
 O problema:
 

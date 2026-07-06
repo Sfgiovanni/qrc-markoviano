@@ -10,8 +10,8 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import embedded_effective_qrc_pipeline_v2 as v2
-import extra_experiments_v4 as v4
+import qrc_pipeline as v2
+import qrc_experiments_robustness as v4
 
 
 def test_all_finite_dict_and_iter():

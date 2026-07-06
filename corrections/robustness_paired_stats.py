@@ -15,7 +15,7 @@ import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-import extra_experiments_v4 as v4  # noqa: E402
+import qrc_experiments_robustness as v4  # noqa: E402
 
 V6 = Path(ROOT) / "results_corrections_v6"
 ORIG = Path(ROOT) / "results_extra_v4" / "benchmarks_paired_stats.csv"
