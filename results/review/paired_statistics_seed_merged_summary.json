@@ -1,0 +1,8 @@
+{
+  "min_decision_seeds": 20,
+  "n_comparisons": 198,
+  "n_inconclusive": 0,
+  "n_significant": 145,
+  "n_where_positional_used_different_n": 0,
+  "comparisons_with_misaligned_seeds": []
+}

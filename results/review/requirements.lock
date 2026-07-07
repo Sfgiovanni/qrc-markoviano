@@ -1,0 +1,38 @@
+# requirements.lock — pinned environments for the QRC review (item 10)
+# =====================================================================
+# TWO environments are involved and they DIFFER. This is a reproducibility
+# caveat, recorded here honestly rather than hidden.
+#
+# [A] ORIGINAL RUN — produced results_abc_comparison_v2/ and results_extra_v3..v5/
+#     (source: results_abc_comparison_v2/environment.json)
+#       python        3.12.11
+#       numpy         2.5.0
+#       scipy         1.18.0
+#       pandas        3.0.3
+#       torch         2.5.1+cu121   (CUDA 12.1)
+#       optuna        4.9.0
+#       matplotlib    3.11.0
+#       nbformat      5.10.4
+#       nbclient      0.11.0
+#       GPU           NVIDIA GeForce RTX 3080 Ti (12.629 GB)
+#       platform      Linux-6.8.0-124-generic-x86_64-with-glibc2.35
+#
+# [B] REVIEW / RE-ANALYSIS ENV — produced results_review/ (Phases 2, 3A, 3B)
+#     This is THIS machine's current environment. The pinned versions below are [B].
+#     The Phase-2/3B recomputes only read CSVs and rerun deterministic paired
+#     statistics; Phase-3A re-simulates the reservoir on the same GPU. Numerical
+#     results are robust to the [A]->[B] version drift (float32 GPU evolution,
+#     ridge readouts), but exact bit-reproduction requires environment [A].
+#
+# Pinned versions of environment [B] (used for every results_review/ artifact):
+python==3.8.8
+numpy==1.24.4
+scipy==1.6.2
+pandas==1.2.4
+torch==2.4.1+cu121
+scikit-learn==0.24.1
+optuna==4.5.0
+matplotlib==3.3.4
+statsmodels==0.12.2
+# GPU: NVIDIA GeForce RTX 3080 Ti (12 GB), CUDA 12.1
+# platform: Linux-6.8.0-124-generic-x86_64

@@ -1,0 +1,26 @@
+{
+  "gate": "teacher_forced_ok AND out_of_range_fraction <= 0.5, inner join over both arms",
+  "min_decision_seeds": 20,
+  "n_comparisons_metric_rows": 56,
+  "n_primary_rows": 28,
+  "n_primary_inconclusive": 22,
+  "n_primary_decidable": 6,
+  "decidable_comparisons": [
+    "two_delay:AB-embedded vs AB-Markov",
+    "two_delay:ABC-embedded-hierarchical vs AB-embedded",
+    "two_delay:ABC-embedded-hierarchical vs ABC-noaux-hierarchical"
+  ],
+  "inconclusive_comparisons": [
+    "standard:AB-embedded vs AB-Markov (n_gated=0)",
+    "standard:AB-noaux-kraus vs M0-noaux (n_gated=0)",
+    "standard:ABC-embedded-hierarchical vs AB-embedded (n_gated=18)",
+    "standard:ABC-embedded-hierarchical vs ABC-embedded-tied (n_gated=17)",
+    "standard:ABC-embedded-hierarchical vs ABC-noaux-hierarchical (n_gated=0)",
+    "standard:ABC-noaux-hierarchical vs ABC-noaux-tied (n_gated=0)",
+    "standard:ABC-noaux-kraus vs AB-noaux-kraus (n_gated=0)",
+    "two_delay:AB-noaux-kraus vs M0-noaux (n_gated=18)",
+    "two_delay:ABC-embedded-hierarchical vs ABC-embedded-tied (n_gated=12)",
+    "two_delay:ABC-noaux-hierarchical vs ABC-noaux-tied (n_gated=0)",
+    "two_delay:ABC-noaux-kraus vs AB-noaux-kraus (n_gated=19)"
+  ]
+}
