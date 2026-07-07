@@ -35,8 +35,10 @@ every CSV feeding a figure/verdict). Review scripts: `experiments_review/`.
 4. **The autonomous-rollout comparisons are mostly inconclusive under a strict validity
    gate (item 2+8):** 22/28 primary head-to-heads fail because one arm never passes
    teacher-forcing. The surviving comparisons do not favour the deeper hierarchy.
-5. **The γ-scaling of memory is weak but non-zero** (τ_mem ~ (1/γ)^p, p≈0.089, R²≈0.77,
-   n=4) — reported as a minor, not central, claim (item 7).
+5. **The γ-scaling of memory is weak but non-zero** — confirmed with a 10-point
+   log-spaced sweep (τ_mem ~ (1/γ)^p, p≈0.068, R²≈0.84, n=10, bootstrap CI [0.037,0.098]
+   excludes 0), consistent with the v6 4-point fit (p≈0.089). Reported as a minor, not
+   central, claim (item 7).
 
 Net: the study supports **one** useful non-Markovian memory scale, not a demonstrated
 multiscale hierarchy, and shows **no** advantage of the embedded quantum model over its
@@ -111,8 +113,12 @@ autocorrelation of ALL register observables, all 20 eval seeds.
 `results_corrections_v6/scaling_fits_corrected.json`: τ_mem ~ (1/γ)^p with
 **p≈0.089, R²≈0.773, n=4** (γ=0.02/0.05/0.1/0.2), bootstrap CI excludes 0 → weak but
 non-zero. The excess τ_mem−τ_FM is degenerate (≈0), i.e. little horizon gain over the M0
-baseline in this γ range. Treated as a **minor** result. An 8–12-point log-spaced sweep
-is prepared (`experiments_review/phase3c_scaling_sweep.py`, NOT run — see §4).
+baseline in this γ range. Treated as a **minor** result. The 8–12-point log-spaced sweep
+was **executed** (`experiments_review/phase3c_scaling_sweep.py`, 10 points γ∈[0.01,0.30],
+12 seeds, ~21 min GPU): τ_mem falls monotonically 18→14 and the fit gives
+**p=0.068, R²=0.838, n=10, bootstrap CI95 [0.037, 0.098]** — the weak-but-non-zero
+dependence holds with more points (`results_review/scaling_sweep_tau_mem.csv`,
+`scaling_sweep_fit.json`).
 
 ### Item 8 — Clamping in rollouts → RESOLVED (recompute + re-gate)
 `results_review/mg_rollout_gate_stratified.csv` + v6 `mg_clamp_stratified.md`. Heavy
@@ -149,7 +155,7 @@ sha256 of all 70 CSVs feeding figures/verdict. Seeds are fixed by `CFG` and dete
 | Item 6 | **re-simulation** (20 seeds, fine τ) | **yes (~25 min)** | `memory_scales*.csv`, `_summary.json` |
 | Item 2+8 | recompute (re-gate saved rollouts) | no | `mg_rollout_gate*.csv`, `_summary.json` |
 | Items 1,4,5,9 | narrative / null-reporting | no | this file |
-| Item 7 | registered from v6 | (v6 GPU) | `scaling_fits_corrected.json` |
+| Item 7 | v6 4-point + **10-point re-sim** | **yes (~21 min)** | `scaling_sweep_tau_mem.csv`, `scaling_sweep_fit.json` |
 | Item 10 | env lock + hashes | no | `requirements.lock`, `csv_hashes.txt` |
 
 ## 4. What remains inconclusive / not run
@@ -157,8 +163,6 @@ sha256 of all 70 CSVs feeding figures/verdict. Seeds are fixed by `CFG` and dete
 - **Rollout head-to-heads (item 2+8):** 22/28 primary comparisons inconclusive under the
   strict validity gate (baselines never pass teacher-forcing). This is a *limitation of
   the comparison*, honestly reported, not a hidden win.
-- **γ-scaling with 8–12 points (item 7, Phase 3C):** `experiments_review/phase3c_scaling_sweep.py`
-  is prepared but **NOT executed** — it needs explicit go-ahead (it is not a central claim).
 - **Hierarchical vs tied distinction (item 4):** inconclusive under the gate (n_gated<20).
 
 ## 5. One-line bottom line

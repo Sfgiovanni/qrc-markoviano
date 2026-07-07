@@ -69,7 +69,7 @@ critique to the study with minimal GPU re-simulation. Outputs are in
 | `phase2_paired_stats_seed_merged.py`| Recompute paired stats by explicit `seed` key (vs. positional truncation) |
 | `phase3b_mg_rollout_gate.py`        | Re-gate Mackey–Glass rollouts by `teacher_forced_ok ∧ out_of_range` |
 | `phase3a_memory_scales.py`          | GPU re-sim: do two separated memory scales exist? (result: **no**)  |
-| `phase3c_scaling_sweep.py`          | Optional 8–12-point γ scaling law — **guarded, not run** (needs `--run`) |
+| `phase3c_scaling_sweep.py`          | 10-point γ scaling law (executed): τ_mem~(1/γ)^p, p≈0.068, R²≈0.84, n=10 |
 | `make_csv_hashes.py`                | sha256 manifest of CSVs feeding figures/verdict                     |
 
 These scripts are the canonical analysis code; they are executed against the full

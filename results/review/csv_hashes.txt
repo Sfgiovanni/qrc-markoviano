@@ -1,6 +1,6 @@
 # sha256 of CSVs feeding final figures / verdict (item 10)
 # format: <sha256>  <path>  <bytes>
-# 70 files
+# 71 files
 85897fdbeb8135f61aa4d0c9d62e81edcd0f3a72a1d0cef76dc005d4bff80bb8  results_abc_comparison_v2/architecture_classification.csv  231
 6eed06b136834532b8bb8482e762dcaf8e47f7113deb82f969092cc0df07aa10  results_abc_comparison_v2/autonomous_prediction_examples.csv  336892
 3713e2356cada426c06e31afccd4005e84607ab2709508c60e038540271fd8fd  results_abc_comparison_v2/best_parameters_by_task.csv  3701
@@ -71,3 +71,4 @@ cca7bf6cecc8334c5b7bd59db3eba6d47dc55c7c2cf1bf26ba9ab4256373b4a7  results_review
 a44a7add3f3eca76c4083f715a088f5070bc82c5900527805b9102fcaccff3a9  results_review/mg_rollout_gate.csv  15061
 04758b57985bbae7f294bfdf12d5a7308853d6a2815da54ae4ddc8fe80dff7b7  results_review/mg_rollout_gate_stratified.csv  1982
 bb75fc87adcd9111ced84d902aa2eb63ed856b235500b3e72a18e3efb20dc472  results_review/paired_statistics_seed_merged.csv  65719
+e1fa3f71d388c634deda9a0dcdb13152a622cc20b4f19193e231fb04e0e2cb19  results_review/scaling_sweep_tau_mem.csv  496

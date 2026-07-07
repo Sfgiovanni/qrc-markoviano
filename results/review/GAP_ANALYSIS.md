@@ -77,5 +77,5 @@ seeds da Config; **não** tocar em `results_abc_comparison_v2/` nem `results_ext
 
 **Fase 0 aprovada; Fases 1–3A/3B executadas.** Veredito canônico consolidado em
 `FINAL_VERDICT.md`. Item 6 resultou **negativo** (`two_separated_scales=false`). Fase 3C
-(8–12 γ) permanece **preparada mas não executada** (`experiments_review/phase3c_scaling_sweep.py`,
-requer OK explícito).
+(10 pontos de γ) **executada**: p=0.068, R²=0.838, n=10, CI95 [0.037,0.098] — dependência
+fraca mas não-nula confirmada (`scaling_sweep_tau_mem.csv`, `scaling_sweep_fit.json`).
